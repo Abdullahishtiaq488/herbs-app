@@ -131,7 +131,6 @@ But our ambitions extend beyond our borders. We aspire to make Pakistani rice a 
       </div>
       </div>
       
-      <Production />
     </section>
   );
 };
