@@ -1,0 +1,139 @@
+.aboutus{
+    
+    height: auto;
+}
+
+.wrapper{
+    padding: 20px;
+}
+
+.textsA{
+    text-align: left;
+}
+.textsA p{
+    font-style: italic;
+    margin: 15px;
+    font-weight: light;
+}
+
+.heading{
+    
+    text-align: center;
+
+    margin-bottom: 60px;
+    color: gray;
+    font-weight: bolder;
+}
+
+
+
+.section{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.sections{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    padding: 20px;
+}
+.image{
+    width: 50%;
+}
+
+
+
+.challanges h1 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 35px;
+    color: darkred;
+  }
+
+ 
+  
+  .challanges h1:before,
+  .challanges h1:after {
+    background-color: gray;
+    content: "";
+    display: inline-block;
+    height: 1.4px;
+    position: relative;
+    vertical-align: middle;
+    width: 30%;
+  }
+  
+  .challanges h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .challanges h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+
+
+.texts{
+    width: 50%;
+}
+
+.texts p{
+    font-style: italic;
+    margin: 15px;
+}
+
+.address{
+    border: 2px solid black;
+    padding: 20px;
+    margin: 15px;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.address .first{
+    width: 90%;
+}
+
+.address .buttons button{
+    border-radius: 10%;
+    height: 40px;
+    width: 100px;
+
+}
+
+.address .buttons button:hover{
+    background-color: goldenrod;
+    color: white;
+
+}
+
+@media (max-width: 768px) {
+ .sections{
+    flex-direction: column;
+ }
+ .texts{
+    width: 100%;
+ }
+
+ .image{
+    width: 100%;
+    
+ }
+ .heading h1{
+    font-size: 40px;
+ }
+ .challanges h1{
+    font-size: 26px;
+ }
+ 
+  }
+  

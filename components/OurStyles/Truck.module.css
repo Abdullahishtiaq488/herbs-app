@@ -1,0 +1,136 @@
+.truck {
+    position: absolute;
+    bottom: 3%;
+    left: -1000px; /* Initial position off-screen to the left */
+    animation: moveTruck 14s linear infinite;
+  }
+  
+  .imageWrapper {
+    width: 1400px; /* Adjust the width as per your truck image dimensions */
+    height: 400px; /* Adjust the height as per your truck image dimensions */
+  }
+  
+
+  .productsheading {
+    margin-top: 80px;
+    text-align: center;
+    
+    color: #324d67;
+  
+  }
+  
+  .productsheading h1 {
+    font-size: 55px;
+    font-weight: 800;
+  }
+  
+  .productsheading p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+
+ 
+ 
+
+
+  @keyframes moveTruck {
+    0% {
+      left: -1000px; /* Initial position off-screen to the left */
+    }
+    50% {
+      left: 50%; /* Pause at the center of the screen */
+    }
+    100% {
+      left: calc(100% + 200px); /* Reverse back to the left */
+    }
+  }
+
+  @keyframes moveCloud {
+    0% {
+      left: 2%; /* Initial position off-screen to the left */
+    }
+   
+    100% {
+      left: calc(100% + 200px); 
+    }
+  }
+
+  @keyframes moveCloud2 {
+    0% {
+      left: 12%; /* Initial position off-screen to the left */
+    }
+   
+    100% {
+      left: calc(100% + 200px); 
+    }
+  }
+  @keyframes moveCloud3 {
+    0% {
+      right: 22%; /* Initial position off-screen to the left */
+    }
+   
+    100% {
+      left: calc(100% + 200px); 
+    }
+  }
+  
+
+
+.cloud1{
+    position: absolute;
+    top: 3%;
+    right: 400px; /* Initial position off-screen to the left */
+    animation: moveCloud 60s linear infinite;
+}
+
+.cloud2{
+    position: absolute;
+    top: 15%;
+    right: 30%; /* Initial position off-screen to the left */
+    animation: moveCloud2 55s linear infinite;
+}
+
+.cloud3{
+    position: absolute;
+    top: 29%;
+    left: 65%; /* Initial position off-screen to the left */
+    animation: moveCloud3 53s linear infinite;
+}
+
+.cloudWrapper{
+    height: 50px;
+    width: 500px;
+}
+
+
+  @media (max-width: 768px) {
+    .imageWrapper {
+        width: 500px; /* Adjust the width as per your truck image dimensions */
+        height: 250px; /* Adjust the height as per your truck image dimensions */
+      }
+      .heading{
+        margin-top: 60px;
+      }
+    
+    .heading h1{
+        font-size: 35px;
+    }
+    .heading p{
+        font-size: 14px;
+    }
+
+    .productsheading h1 {
+      font-size: 50px;
+      font-weight: 800;
+    }
+    
+    .productsheading p {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  
+  
+  
+  }
+  

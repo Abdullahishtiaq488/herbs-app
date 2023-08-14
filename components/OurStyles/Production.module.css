@@ -1,0 +1,93 @@
+.production{
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: space-evenly;
+}
+
+.toptext{
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleContainer {
+  width: 69%;
+    display: flex;
+    flex-direction: space-evenly;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  
+  .circle {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .progress {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .progressFluid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px solid red;
+    border-top-color: transparent;
+    animation: progressAnimation 2s ease-in-out forwards;
+  }
+  
+  @keyframes progressAnimation {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(288deg); /* 80% of 360 degrees */
+    }
+  }
+  
+  
+  
+  .progressText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .circleTitle {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+  }
+  
+@media (max-width: 768px) {
+    .production{
+      text-align: center;
+      flex-direction: column;
+    }
+    .circleContainer{
+      flex-direction: column;
+      text-align: center;
+      width: 99%;
+    }
+    .toptext{
+      width: 100%;
+    }
+
+  } 

@@ -1,0 +1,66 @@
+/* certifications.module.css */
+  
+.certifications{
+    height: auto;
+    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+  .flexContainer {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+  }
+  
+  .productsheading {
+    text-align: center;
+    margin: 40px 0px;
+    color: #324d67;
+  
+  }
+  
+  .productsheading h2 {
+    font-size: 55px;
+    font-weight: 800;
+  }
+  
+  .productsheading p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  
+
+
+  .images{
+    margin-top: 10px;
+    padding: 15px;
+    max-width: 400px;
+    max-height: auto;
+  }
+
+
+  @media (max-width: 768px) {
+    
+    .heading h1{
+      font-size: 30px;
+   }
+
+   .productsheading h2 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  
+  .productsheading p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  }
+  

@@ -1,0 +1,14 @@
+export { default as Footer } from './Footer';
+export { default as Layout } from './Layout';
+export { default as Navbar } from './Navbar';
+export { default as Product } from './Product';
+export { default as HeroBanner } from './HeroBanner';
+export { default as FooterBanner } from './FooterBanner';
+export { default as Certification } from './Certification';
+export { default as Membership } from './Membership';
+export { default as AboutUs } from './AboutUs';
+export { default as Production } from './Production';
+export { default as Truck } from './Truck';
+export { default as Cart } from './Cart';
+export { default as TopBelt } from './TopBelt';
+export { default as Features } from './Features';

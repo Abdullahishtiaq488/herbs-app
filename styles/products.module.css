@@ -1,0 +1,78 @@
+.products {
+  
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  
+}
+
+
+
+.titles{
+  padding-left: 30px;
+  margin-bottom: 80px;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  gap: 50px;
+}
+
+.navbar p {
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: color 1s, text-decoration 4s;
+}
+
+/* Change the color and add underline on hover */
+.navbar p:hover {
+  color: #006400;
+  text-decoration: underline;
+}
+
+.navbarcontainer{
+  display: flex;
+  background-color: rgba(241, 236, 236, 0.76);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .navbarcontainer{
+    padding: 10px;
+    width: 100%!important;
+  }
+.navbar{
+  gap: 35px;
+}
+  .navbar p {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .products {
+
+  }
+  .titles{
+    padding: 5px;
+    margin-top: 10px!important;
+  
+  }
+
+}
+
+
+

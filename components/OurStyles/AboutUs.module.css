@@ -1,0 +1,103 @@
+.aboutus h2 {
+    color: white;
+}
+
+.aboutus p {
+    margin-top: 15px;
+}
+
+.aboutus {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+
+
+}
+
+
+
+.toptext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+
+    padding: 170px;
+
+
+}
+
+
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.icons {
+    width: 11%;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    width: 79%;
+
+}
+
+@media (max-width: 768px) {
+    .image {
+        display: none;
+    }
+
+    .aboutus {
+        text-align: center;
+    }
+
+    .toptext {
+        width: 99%;
+        height: auto;
+        padding: 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .toptext h2 {
+        font-size: 16px;
+    }
+
+    .toptext p {
+        font-size: 10px;
+    }
+
+    .icons {
+        width: 99%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .text {
+        width: 99%;
+    }
+
+    .boxes {
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,77 @@
+.brands {
+    height: auto;
+    padding: 20px;
+}
+
+.heading {
+
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: gray;
+    font-weight: bolder;
+}
+
+.heading h1 {
+    font-size: 50px;
+}
+
+
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+    
+}
+
+.flexitem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: auto;
+    gap: 70px;
+}
+
+.itemdata {
+    width: 99%;
+    height: 230px;
+
+}
+
+.itemdata1 {
+    width: 97%;
+    height: 620px;
+    padding: 25px;
+    text-align: center;
+    padding-top: 40%;
+
+}
+
+.itemdata1 h1 {
+    margin-bottom: 20px;
+}
+
+.itemdata .strip {
+    background-color: rgba(0, 0, 0, 0.23);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 36%;
+}
+
+.itemdata .strip h3 {
+    font-size: 26px;
+}
+
+@media (max-width: 768px) {
+    .flexbox {
+        flex-direction: column;
+    }
+
+}
