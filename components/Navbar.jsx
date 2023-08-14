@@ -45,12 +45,8 @@ const Navbar = () => {
         {/* <Link href="/products">
           <p className={router.pathname === '/products' ? 'active' : ''}>ShopNow</p>
         </Link> */}
-        <Link href="/aboutus">
-          <p className={router.pathname === '/aboutus' ? 'active' : ''}>About Us</p>
-        </Link>
-        <Link href="/brands">
-          <p className={router.pathname === '/brands' ? 'active' : ''}>Our Brands</p>
-        </Link>
+        
+        
         <Link href="/contactus">
           <p className={router.pathname === '/contactus' ? 'active' : ''}>Contact Us</p>
         </Link>
