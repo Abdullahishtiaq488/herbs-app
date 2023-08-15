@@ -19,16 +19,16 @@ const Products = ({ products }) => {
     <div className={styles.navbarcontainer}>
 
       <div className={styles.navbar}> 
-      <Link href="#rice">
+      <Link href="#rice" passHref>
           <p >Rice</p>
         </Link>
-        <Link href="#juice">
+        <Link href="#juice" passHref>
           <p >Juice</p>
         </Link>
-        <Link href="#spices">
+        <Link href="#spices" passHref>
           <p >Spices</p>
         </Link>
-        <Link href="#salt">
+        <Link href="#salt" passHref>
           <p >Salt</p>
         </Link>  
       </div>

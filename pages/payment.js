@@ -27,7 +27,7 @@ const Payment = () => {
   // Call the calculateTotal function whenever there is a change in the order or relevant data
   useEffect(() => {
     calculateTotal();
-  }, [totalPrice]);
+  }, [totalPrice, calculateTotal]);
 
   // State for Step 1
   const [fullname, setFullname] = useState('');
@@ -124,7 +124,7 @@ const Payment = () => {
           <form className={styles.form1} ref={form} onSubmit={sendEmail}>
             <h3>This is a DELIVERY ORDER<br />
               Just a last step, please enter your details:</h3><br /><br />
-            <label for="title">Title:</label><br />
+            <label >Title:</label><br />
             <select value={title} id="title" name="title" onChange={(e) => setTitle(e.target.value)}>
               <option value="Mr.">Mr.</option>
               <option value="Mrs.">Mrs.</option>
@@ -133,10 +133,10 @@ const Payment = () => {
             <label>Full Name</label>
             <br />
             <input name='fullname' type="text" placeholder="Enter your full name" value={fullname} onChange={(e) => setFullname(e.target.value)} required />
-            <br /><label for="mobile">Mobile Number</label>
+            <br /><label >Mobile Number</label>
             <br />
             <input id="mobile" name='mobilenumber' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text" value={mobilenumber} onChange={(e) => setMobilenumber(e.target.value)} required />
-            <br /><label for="mobile2">Alternate Number</label>
+            <br /><label >Alternate Number</label>
             <br />
             <input id="mobile2" name='mobilenumber2' maxLength={11} placeholder='03xx-xxxxxxx' title="Please enter a valid alternate mobile number in the format 03xx-xxxxxxx" pattern="\d{4}-\d{7}" type="text" value={anothernumber} onChange={(e) => setAnothernumber(e.target.value)} required />
 

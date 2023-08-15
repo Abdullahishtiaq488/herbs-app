@@ -39,7 +39,7 @@ const Navbar = () => {
       </div>
 
       <div className={`links ${isMenuOpen ? 'open' : ''}`}>
-      <Link href="/">
+      <Link href="/" passHref>
           <p className={router.pathname === '/' ? 'active' : ''}>Home</p>
         </Link>
         {/* <Link href="/products">
@@ -47,13 +47,13 @@ const Navbar = () => {
         </Link> */}
         
         
-        <Link href="/contactus">
+        <Link href="/contactus" passHref>
           <p className={router.pathname === '/contactus' ? 'active' : ''}>Contact Us</p>
         </Link>
       </div>
 <div className='jewel'>
 
-<Link href={`/#products`}>
+<Link href={`/#products`} passHref>
               <button className='btn1' type="button">Shop Now</button>
             </Link>
             
