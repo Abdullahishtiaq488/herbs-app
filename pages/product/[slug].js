@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { AiOutlineMinus, AiOutlinePlus, AiFillStar, AiOutlineStar } from 'react-icons/ai';
-import Image from 'next/image';
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
@@ -21,11 +20,11 @@ const ProductDetails = ({ product, products }) => {
       <div className="product-detail-container">
         <div>
           <div className="image-container">
-            <Image src={urlFor(image && image[index])} alt='n0 pic' className="product-detail-image" />
+            <img src={urlFor(image && image[index])} alt='n0 pic' className="product-detail-image" />
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
-              <Image
+              <img
                 key={i}
                 src={urlFor(item)}
                 alt='no pic'
