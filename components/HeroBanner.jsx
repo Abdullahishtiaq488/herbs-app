@@ -53,7 +53,7 @@ const HeroBanner = ({ heroBanner }) => {
           <p className="beats-solo">{heroBanner.smallText}</p>
           <h3>{heroBanner.midText}</h3>
           <h1>{heroBanner.largeText1}</h1>
-          <div className={`hero-banner-images ${shouldAnimate ? 'animation' : ''}`}>
+          {/* <div className={`hero-banner-images ${shouldAnimate ? 'animation' : ''}`}>
             <Image src={masala1} layout="fill" objectFit="cover" alt="headphones" />
           </div>
           <div className={`hero-banner-images2 ${shouldAnimate ? 'animation' : ''}`}>
@@ -64,7 +64,7 @@ const HeroBanner = ({ heroBanner }) => {
           </div>
           <div className={`hero-banner-images4 ${shouldAnimate ? 'animation' : ''}`}>
             <Image src={masala4} layout="fill" objectFit="cover" alt="rice" />
-          </div>
+          </div> */}
 
 
           <div>
@@ -75,7 +75,7 @@ const HeroBanner = ({ heroBanner }) => {
       </div>
       <div style={{
         background: `linear-gradient(rgba(0, 0, 0, 0.041), 
-        rgba(0, 0, 0, 0.041)), url("/bgimages/rice1.png")`,
+        rgba(0, 0, 0, 0.041)), url("/bgimages/rice1.jpg")`,
         backgroundPosition: 'center',
         padding: '100px 40px',
         height: '600px',
